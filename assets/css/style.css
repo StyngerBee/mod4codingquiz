@@ -71,12 +71,17 @@ button:hover{
 }
 
 /* targets feedback and styles that section */
-#feedback {
+#feedback1 {
     outline: 10px solid lightblue;
-    color: blue;
+    color: green;
     font-size: large;
 }
 
+#feedback2 {
+    outline: 10px solid lightblue;
+    color: red;
+    font-size: large;
+}
 
 /* adjusts highscore screen and everything on that screen */
 #highscores {

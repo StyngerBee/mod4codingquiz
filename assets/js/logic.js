@@ -69,14 +69,14 @@ else{
             quizEnd();
         }
         // give them feedback, letting them know it's wrong
-        document.getElementById("feedback").textContent = "Incorrect!";
-        document.getElementById("feedback").className = "show";
+        document.getElementById("feedback2").textContent = "Incorrect!";
+        document.getElementById("feedback2").className = "show";
     }
     else{
         console.log("You guessed right!");
         // give them feedback, letting them know it's right
-        document.getElementById("feedback").textContent = "Correct!";
-        document.getElementById("feedback").className = "show";
+        document.getElementById("feedback1").textContent = "Correct!";
+        document.getElementById("feedback1").className = "show";
         // move to next question
         currentQuestion++;
         if(currentQuestion>3){
@@ -100,7 +100,8 @@ document.getElementById('end-screen').className ="show";
 document.getElementById("final-score").textContent = time;
 // hide questions section
 document.getElementById('questions').className ="hide";
-document.getElementById("feedback").className = "hide";
+document.getElementById("feedback1").className = "hide";
+document.getElementById("feedback2").className = "hide";
 }
 
 /* FUNCTION FOR UPDATING THE TIME */
@@ -147,9 +148,7 @@ else{
 }
 }
 
-if (document.getElementById("feedback") == 'Incorrect!'){
-  document.getElementById("feedback") = createElement
-}
+
 
 /* CLICK EVENTS */
 // user clicks button to submit initials
