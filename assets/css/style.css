@@ -73,7 +73,7 @@ button:hover{
 /* targets feedback and styles that section */
 #feedback {
     outline: 10px solid lightblue;
-    color: var(--lightpurp);
+    color: blue;
     font-size: large;
 }
 
