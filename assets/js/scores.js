@@ -13,7 +13,7 @@ function printHighscores() {
   }
 }
 
-/* FUNCTION TO CLEAR SCORES */
+/* function for clearing all highscores */
 function clearHighscores() {
   // removes an item from local storage
   localStorage.removeItem("savedScores");

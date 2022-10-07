@@ -1,46 +1,46 @@
-// variables to keep track of quiz state
+// variables to keep track of quiz conditions
 var currentQuestion = 0;
 var time = 60;
 var timer;
 
 
-// variables to reference DOM elements
+// variables to reference elements
 var questionsEl = document.getElementById('questions');
 
 
-/* FUNCTION TO START THE QUIZ */
+/* starts quiz */
 function startQuiz(event) {
 event.stopPropagation();
-// hide start screen
+// hides start screen
 document.getElementById('start-screen').className ="hide";
 
-// un-hide questions section
+// un-hides questions section
 document.getElementById('questions').className ="show";
-// start timer
+// starts timer
 clockTick();
 
 getQuestion();
 }
 
-/* FUNCTION TO GET/SHOW EACH QUESTION */
+/* function to change questions */
 function getQuestion() {
 // get current question object from array
 var questionValue = questions[currentQuestion];
 
-// update title with current question
+// updates title with current question
 
 document.getElementById('question-title').textContent =  questionValue.title;
 
-// clear out ant old question choices
+// clears out old question choices
 document.getElementById('choices').innerHTML = '';
 
 // loop over choices
 for(var i=0;i<questionValue.choices.length;i++) {
-    //create new button for each choice
+    //creates new button for each choice
     var btn = document.createElement("button");
     btn.textContent = i+1 + ". " +questionValue.choices[i];
     btn.setAttribute("data-index", i);
-    //display on the page
+    //displays on the page
     document.querySelector("#choices").appendChild(btn);
 }
 }
