@@ -1,3 +1,4 @@
+/*universal selector */
 :root {
     --darkpurp: #522288;
     --lightpurp: #783bbd;
@@ -5,6 +6,7 @@
     --offwhite: #ead9ff;
 
   }
+  /* targets body */
 body{
     overflow: hidden;
     position: absolute;
@@ -12,6 +14,7 @@ body{
     height: 100%;
     margin: 0;
 }
+/* selects header*/
 header{
     display: flex;
     justify-content: space-between;
@@ -19,6 +22,7 @@ header{
     padding: 5px;
     font-weight: bold;
 }
+ /* targets view high score link */
 header a {
     text-decoration: none;
     color: var(--lightpurp);
@@ -33,18 +37,21 @@ header a {
     text-align: left;
     flex-direction: column;
 }
+/* targets start button */
 .start {
     text-align: center;
 }
+/* adjusts start screen width */
 #start-screen p{
     width: 500px;
 }
-
+/* positions questions in center and aligns them within their section */
 #questions {
     position: relative;
     justify-content: left;
     align-items: flex-start;
 }
+/* styles all buttons on page */
 button {
     background-color: var(--darkpurp);
     color: white;
@@ -63,13 +70,15 @@ button:hover{
     display: block;
 }
 
-
+/* targets feedback and styles that section */
 #feedback {
     outline: 10px solid lightblue;
     color: var(--lightpurp);
     font-size: large;
 }
 
+
+/* adjusts highscore screen and everything on that screen */
 #highscores {
     width: 100%;
     padding: 0;
