@@ -5,17 +5,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Coding Quiz</title>
-        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <!-- links stylesheet to html-->
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 
     <body>
+        <!-- references the html for high scores into a button-->
         <header>
                 <a href="./highscores.html" >View Highscores</a>
                 <span id="timeText">Time: 60</span>
         </header>
-
+        <!-- creates "wrapper" as a section to modify all of the quiz-->
         <div class="wrapper">
+            <!-- sections the original start screen-->
             <div id="start-screen" class="start">
                 <h1>Coding Quiz Challenge</h1>
                 <!-- p tag with a little intro about the quiz -->
@@ -25,7 +27,7 @@
                 <!-- start button -->
                 <button id="start-quiz">Start Quiz</button>
             </div>
-
+            <!-- hides previous screens after proceeding to next one -->
             <div id="questions" class="hide">
                 <h2 id="question-title">test title</h2>
                 <div id="choices" class="choices"></div>
@@ -42,7 +44,7 @@
 
             <div id="feedback" class="feedback hide"></div>
         </div>
-
+        <!-- adds two js files to pull in both the questions and the logic needed to determine if choices are correct-->
         <script src="./assets/js/questions.js"></script>
         <script src="./assets/js/logic.js"></script>
     </body>
