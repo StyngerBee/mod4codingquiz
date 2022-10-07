@@ -147,6 +147,10 @@ else{
 }
 }
 
+if (document.getElementById("feedback") == 'Incorrect!'){
+  document.getElementById("feedback") = createElement
+}
+
 /* CLICK EVENTS */
 // user clicks button to submit initials
 document.querySelector("#submit").addEventListener("click", saveHighscore);
