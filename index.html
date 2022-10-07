@@ -1,49 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 4 Mini Quiz</title>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Coding Quiz</title>
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
 
-    <link rel="stlesheet" href="./assets/css/style.css">
- 
-
-</head>
-
-<body>
-    <div>
+    <body>
         <header>
-            
-    
-            <div class ="title">View High Scores</div>
-            <div class = "timer">
-                <div class="time_text"> Time:</div>
-                <div class="time_sec">Number</div>
-                
-            </div>
-        
-
+                <a href="./highscores.html" >View Highscores</a>
+                <span id="timeText">Time: 60</span>
         </header>
-        <section>
-            
-            <div class="" id="start-page">
-                <h1>Coding Quiz</h1>
-                <p>quiz description</p>
-                <button class="start">Start</button>
-            </div>  
-            <div class="quizquestions">
-                <!--inserted questions from JS-->
 
-            </div>
-            <div class="options">
-                <!--options inserted from javascript-->
+        <div class="wrapper">
+            <div id="start-screen" class="start">
+                <h1>Coding Quiz Challenge</h1>
+                <!-- p tag with a little intro about the quiz -->
+                <p>
+                    Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+                </p>
+                <!-- start button -->
+                <button id="start-quiz">Start Quiz</button>
             </div>
 
-        </section>
-    </div>
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
-    <script src="./assets/js/scores.js"></script>
-</body>
+            <div id="questions" class="hide">
+                <h2 id="question-title">test title</h2>
+                <div id="choices" class="choices"></div>
+            </div>
+
+            <div id="end-screen" class="hide">
+                <h2>All done!</h2>
+                <p>Your final score is <span id="final-score"></span>.</p>
+                <p>
+                    Enter initials: <input type="text" id="initials" maxlength="3" />
+                    <button id="submit">Submit</button>
+                </p>
+            </div>
+
+            <div id="feedback" class="feedback hide"></div>
+        </div>
+
+        <script src="./assets/js/questions.js"></script>
+        <script src="./assets/js/logic.js"></script>
+    </body>
 </html>
