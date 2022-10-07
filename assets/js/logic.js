@@ -70,12 +70,18 @@ else{
         }
         // give them feedback, letting them know it's wrong
         document.getElementById("feedback2").textContent = "Incorrect!";
+            setTimeout(function () {
+              document.getElementById("feedback2").textContent = '';
+          }, 1000);
         document.getElementById("feedback2").className = "show";
     }
     else{
         console.log("You guessed right!");
         // give them feedback, letting them know it's right
         document.getElementById("feedback1").textContent = "Correct!";
+            setTimeout(function () {
+              document.getElementById("feedback1").textContent = '';
+          }, 1000);
         document.getElementById("feedback1").className = "show";
         // move to next question
         currentQuestion++;
